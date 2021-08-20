@@ -1,0 +1,7 @@
+env:
+  cebab-case:
+    variable-case: cebab-case
+  camel-case:
+    variableCase: camelCase
+  snake-case:
+    variable_case: snake_case
