@@ -14,6 +14,19 @@ env:
 
 ```
 
+#### Configu from @Value
+#### <span style="color:red">Variables with words that contain snake_case delimited don't support by @Value
+```bash
+    @Value("${env.value.one-property.in-cebab-case0:}")
+    private String cebabCaseValue0 = null;
+    @Value("${env.value.one-property.in-cebab-case1:}")
+    private String cebabCaseValue1 = null;
+    @Value("${env.value.one_property.in_snake_case0:SNAKE_CASE_WORD not support in @Value}")
+    private String snakeCaseValue0 = null;
+    @Value("${env.value.one_property.in_snake_case1:SNAKE_CASE_WORD not support in @Value}")
+    private String snakeCaseValue1 = null;
+```
+
 #### Config from ENV
 `.env`
 ```bash
