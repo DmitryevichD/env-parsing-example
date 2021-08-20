@@ -15,7 +15,11 @@ env:
 ```
 
 #### Configu from @Value
-#### <span style="color:red">Variables with words that contain snake_case delimited don't support by @Value
+#### 
+```diff 
+- ATTENTION!!! Variables with words that contain snake_case delimited don't support by @Value
+```
+
 ```bash
     @Value("${env.value.one-property.in-cebab-case0:}")
     private String cebabCaseValue0 = null;
